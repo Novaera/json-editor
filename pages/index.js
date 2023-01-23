@@ -65,7 +65,7 @@ export default function Home() {
             {
               fields !== null ?
               <>
-                <button className="download" onClick={download}>Guardar</button>
+                <button className={styles.download} onClick={download}>Guardar</button>
                 {Object.keys(fields).map((key, index) => <div className={styles.field} key={index}>
                   <div className={styles.key} title={key}>{key}</div>
                   <div className={styles.value}>
